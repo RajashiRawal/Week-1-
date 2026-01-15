@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hover Column Colors</title>
+    <style>
+    table {
+        border-collapse: collapse;
+        width: 300px;
+    }
+
+    th, td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: center;
+    }
+
+    tr:nth-child(4n + 2):hover  {
+        background-color: blue;
+        color: white;
+    }
+
+    tr:nth-child(4n):hover  {
+        background-color: red;
+        color: white;
+    }
+</style>
+
+</head>
+<body>
+
+<table>
+    <!-- Heading -->
+     <thead>
+        <tr>
+        <th>A</th>
+        <th>B</th>
+        <th>C</th>
+    </tr>
+
+     </thead>
+    
+
+    <!-- Rows 1 to 20 -->
+    <tr><td>1</td><td>1</td><td>1</td></tr>
+    <tr><td>2</td><td>2</td><td>2</td></tr>
+    <tr><td>3</td><td>3</td><td>3</td></tr>
+    <tr><td>4</td><td>4</td><td>4</td></tr>
+    <tr><td>5</td><td>5</td><td>5</td></tr>
+    <tr><td>6</td><td>6</td><td>6</td></tr>
+    <tr><td>7</td><td>7</td><td>7</td></tr>
+    <tr><td>8</td><td>8</td><td>8</td></tr>
+    <tr><td>9</td><td>9</td><td>9</td></tr>
+    <tr><td>10</td><td>10</td><td>10</td></tr>
+    <tr><td>11</td><td>11</td><td>11</td></tr>
+    <tr><td>12</td><td>12</td><td>12</td></tr>
+    <tr><td>13</td><td>13</td><td>13</td></tr>
+    <tr><td>14</td><td>14</td><td>14</td></tr>
+    <tr><td>15</td><td>15</td><td>15</td></tr>
+    <tr><td>16</td><td>16</td><td>16</td></tr>
+    <tr><td>17</td><td>17</td><td>17</td></tr>
+    <tr><td>18</td><td>18</td><td>18</td></tr>
+    <tr><td>19</td><td>19</td><td>19</td></tr>
+    <tr><td>20</td><td>20</td><td>20</td></tr>
+</table>
+
+</body>
+</html>
