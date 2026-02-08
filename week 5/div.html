@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Boxes</title>
+
+  <style>
+    
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  gap: 10px;
+  flex-wrap: wrap; 
+}
+
+.box {
+  background: skyblue;
+  width: 25%; 
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+
+    .footer-box {
+      background: lightgreen;
+      height: 100px;
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+    }
+
+
+    @media (max-width: 700px) {
+      .box {
+        width: 48%;
+      }
+    }
+
+
+    @media (max-width: 400px) {
+      .box {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div class="footer-box">
+    Header Box
+  </div>
+
+
+  <div class="container">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+    <div class="box">Box 4</div>
+  </div>
+
+
+  <div class="footer-box">
+    Rectangle Box
+  </div>
+
+</body>
+</html>
