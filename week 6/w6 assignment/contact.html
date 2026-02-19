@@ -3,56 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-
+    <title>Contact Us - Maybelline</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: #f2f2f2;
+            background: #fff0f6;
         }
+        .navbar { background:#e91e63; }
         .Form {
-            width: 600px;
+            max-width: 700px;
             background: #fff;
-            padding: 15px;
+            padding: 40px;
             margin: 50px auto;
-            border-radius: 5px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .Form h2 {
+            color: #e91e63;
+            margin-bottom: 10px;
         }
         input, textarea {
-            width: 100%;
-            padding: 6px;
-            margin: 5px 0 10px;
+            border: 2px solid #f0f0f0;
+            border-radius: 8px;
+            font-size: 15px;
         }
-        button {
-            width: 100%;
-            padding: 8px;
-            background: #ff6b6b;
-            color: #fff;
-            border: none;
+        input:focus, textarea:focus {
+            border-color: #e91e63;
+            box-shadow: 0 0 0 0.25rem rgba(233, 30, 99, 0.25);
+        }
+        label {
+            font-weight: 600;
+            color: #333;
+        }
+        .info-text {
+            text-align: center;
+            color: #666;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
 
+<nav class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+<a class="navbar-brand fw-bold" href="index.html">Maybelline</a>
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-end" id="nav">
+<ul class="navbar-nav">
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
 <div class="Form">
     <h2>Contact Us</h2>
-    <p>Have questions? Get in touch.</p>
+    <p>Have questions? Get in touch with us.</p>
     <hr>
 
-    <form>
-        <label>First Name</label>
-        <input type="text">
+    <form class="row g-3" action="#" method="post">
+        <div class="col-md-12">
+            <label class="form-label">First Name</label>
+            <input type="text" class="form-control" required>
+        </div>
 
-        <label>Last Name</label>
-        <input type="text">
+        <div class="col-md-12">
+            <label class="form-label">Last Name</label>
+            <input type="text" class="form-control" required>
+        </div>
 
-        <label>Message</label>
-        <textarea></textarea>
+        <div class="col-md-12">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" required>
+        </div>
 
-        <button type="submit">Send Message</button>
+        <div class="col-md-12">
+            <label class="form-label">Message</label>
+            <textarea rows="5" class="form-control" required></textarea>
+        </div>
+
+        <div class="col-12">
+            <button class="btn btn-primary w-100" type="submit" style="background:#e91e63; border:none; padding:14px; font-size:16px; font-weight:600;">Send Message</button>
+        </div>
     </form>
 
-    <p style="font-size:12px;">We usually respond within 24 hours.</p>
+    <p class="info-text">We usually respond within 24 hours.</p>
 </div>
+
+<footer class="py-4 text-white" style="background:#e91e63;">
+<div class="container text-center">
+© 2026 Maybelline Beauty
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
