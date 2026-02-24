@@ -1,88 +1,54 @@
 body {
-  background: #fff0f6;
-  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f5e6d3 0%, #d7ccc8 100%);
+  font-family: 'Georgia', serif;
+  color: #5d4037;
 }
 
-/* LOGO */
-
-.logo-text {
-  font-family: 'Playfair Display', serif; 
-  color: #e91e63; 
-  letter-spacing: 4px;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.15); 
-  position: relative;
-}
-
-
-/* Hover effect */
-.logo-text:hover {
-  transform: scale(1.05);
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.contact {
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.contact p {
-    grid-column: span 12;
-    color: #4b5563;
-    font-size: 1.1em;
-    margin: 10px 0;
-}
-.contact {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 30px;
-    background-color: white;
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 50px 40px;
-    border-radius: 16px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-}
-
-
-.contact h2 {
-    grid-column: span 12;
-    margin-bottom: 10px;
-    border-bottom: 3px solid #ec4899;
-    padding-bottom: 15px;
-}
+.text-brown { color: #6d4c41; }
 
 /* NAVBAR */
-.nav-link {
-  font-weight: 600;
-}
-
-.nav-link:hover {
-  color: #e91e63 !important;
+.navbar {
+  background: linear-gradient(135deg, #8d6e63 0%, #6d4c41 100%) !important;
 }
 
 /* BUTTON */
 .btn-pink {
-  background: #e91e63;
+  background: #8d6e63;
   color: white;
   border: none;
 }
 
 .btn-pink:hover {
-  background: #c2185b;
+  background: #6d4c41;
+  color: white;
 }
 
 /* PRODUCT */
-.product-card img {
-  height: 200px;
+.card {
+  border: none;
+  transition: transform 0.3s;
+}
+
+
+
+.card img {
+
   object-fit: cover;
+  width: 100%;
 }
 
-.product-card:hover {
-  transform: translateY(-5px);
-  transition: 0.3s;
+/* MEDIA QUERIES */
+@media (max-width: 991px) {
+  .navbar-nav { padding: 15px 0; }
+  .navbar-nav .nav-item { padding: 5px 0; }
 }
 
-.text-pink {
-  color: #e91e63;
+@media (max-width: 768px) {
+  .card img { height: 250px; }
+  h1 { font-size: 2rem; }
+}
+
+@media (max-width: 576px) {
+  .card img { height: 200px; }
+  h1 { font-size: 1.5rem; }
 }
